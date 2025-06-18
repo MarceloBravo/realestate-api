@@ -29,6 +29,11 @@ app.get('/api/inmuebles', (req, res) => {
   res.json(inmuebles);
 });
 
+
+app.get('/api/inmuebles/#id', (req, res) => {
+  res.json(inmuebles[req.params.id - 1]);
+});
+
 /**
  * Exporta la instancia de la aplicación para ser utilizada en otros módulos.
  */
