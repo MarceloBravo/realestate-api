@@ -10,7 +10,7 @@ jobs:                                                                     # Defi
     runs-on: ubuntu-latest                                                # Sistema operativo en el que se ejecutará
     strategy:                                                             # Estrategia de matriz
       matrix:                                                             # Definición de matriz
-        node: [16.x, 18.x, 22.x]                                                # Versiones de Node.js a probar
+        node: [18.x, 22.x]                                                # Versiones de Node.js a probar
     steps:                                                                # Pasos del trabajo
       - name: Checkout del código                                         # Nombre del paso
         uses: actions/checkout@v3                                         # Acción para clonar el repositorio
